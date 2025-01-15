@@ -1,0 +1,6 @@
+names:
+- hamster
+nc: 1
+test: hamster_Data/test/images
+train: hamster_Data/train/images
+val: hamster_Data/valid/images

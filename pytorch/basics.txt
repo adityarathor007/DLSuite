@@ -1,0 +1,5 @@
+epoch = 1 forward and backward pass of all training samples
+batch_size = number of training samples in one forward and backward pass
+number of iterations = number of passes each pass using number of samples/batch_size
+
+eg: 100 samples batch_size=20 ----> 100/20=5 iterations for one epoch
