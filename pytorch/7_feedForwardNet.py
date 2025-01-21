@@ -128,7 +128,7 @@ for epoch in range(num_epochs):
 
 labels1=[]
 preds=[]
-with torch.no_grad():
+with torch.no_grad():  #disable gradient calculation
     n_correct=0
     n_samples=0
     for images,labels in test_loader:
