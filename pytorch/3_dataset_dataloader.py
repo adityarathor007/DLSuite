@@ -52,7 +52,8 @@ dataset=WineDataset()
 
 # Dataloader is USED FOR CREATING BATCHES
 dataloader=DataLoader(dataset=dataset,batch_size=4,shuffle=True,num_workers=2)
-# 2 subprocess load the data in parallel (loading data means creating batches)
+# 2 subprocess load the data in parallel (loading data means creating batches). The advantage of using this is that is since out machine has multiple cores so then next batches will be ready before the main batch is ready for another batch
+
 
 
 dataiter=iter(dataloader)

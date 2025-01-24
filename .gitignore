@@ -3,3 +3,4 @@ ViT/saved_models
 TL/mobileNet/datasets
 TL/YOLO/datasets/
 TL/YOLO/models/
+Image_Gen/DiffText/textdiffuser-ckpt/
