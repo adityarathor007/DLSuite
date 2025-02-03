@@ -8,6 +8,7 @@ import argparse
 import matplotlib.pyplot as plt
 from PIL import Image, ImageFont, ImageDraw, ImageOps
 from model.layout_transformer import LayoutTransformer, TextConditioner
+from util import get_width, get_key_words, adjust_overlap_box, shrink_box, adjust_font_size, alphabet_dic
 
 
 model=LayoutTransformer().cuda().eval()
@@ -164,9 +165,11 @@ def process_caption(font_path,caption,keywords):
         
 
 
-def get_layout_from_prompt(caption):
+def get_layout_from_prompt(args):
 
-    font_path='/home/adi_techbuddy/Desktop/python/repos/brush-your-text/controlnet_util/Textgen/English/Roboto/static/Roboto-Regular.ttf'
+    font_path=args.font_path
+    print("the font path is:  ",font_path)
+    caption=args.prompt
     text_embedding,mask=text_encoder(caption)   #text_embedding is embedding for tokens, and mask is the attention mask(relevant content)
     print(text_embedding.shape)
 
