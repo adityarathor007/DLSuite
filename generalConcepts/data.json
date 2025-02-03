@@ -1,0 +1,11 @@
+{
+    "name": "Sneha Attri",
+    "age": 30,
+    "isEmployed": true,
+    "skills": ["JavaScript", "Python", "SQL"],
+    "address": {
+        "street": "123 Elm St",
+        "city": "Somewhere",
+        "zip": "12345"
+    }
+}
