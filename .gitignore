@@ -5,3 +5,4 @@ TL/YOLO/datasets/
 TL/YOLO/models/
 Image_Gen/DiffText/textdiffuser-ckpt/
 Fonts/
+Image_Gen/Diffusion/data/

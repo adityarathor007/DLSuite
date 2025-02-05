@@ -1,0 +1,45 @@
+# YAML Example demonstrating all key concepts
+
+string_value: "This is a string"
+integer_value: 42
+float_value: 3.1415
+boolean_value: true
+null_value: null  # Can also be written as ~ or left empty
+
+# Multi-line string with ">"
+# (folded style: newlines turn into spaces)
+folded_string: >
+  This is a folded block.
+  It will be written as a single line
+  when parsed.
+
+# Multi-line string with "|"
+# (literal style: preserves newlines)
+literal_string: |
+  This is a literal block.
+  Newlines will be preserved exactly
+  as they are written here.
+
+# List example (array)
+fruits:
+  - Apple
+  - Banana
+  - Orange
+
+# Another way to write a list (inline)
+colors: [Red, Green, Blue]
+
+# Object (Dictionary / Key-Value Pairs)
+person:
+  name: John Doe
+  age: 30
+  address:
+    city: New York
+    zip: 10001
+  hobbies:
+    - Reading
+    - Traveling
+    - Swimming
+
+# Inline object notation
+car: { brand: Tesla, model: Model S, year: 2023 }
